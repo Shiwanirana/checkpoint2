@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Santa Magic</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <audio src="jingle_bells_remix.mp3" id="song"></audio>
+    <header class="container-fluid">
+      <div class="row p-4">
+        <div class="col-6 offset-3 text-center">
+          <h1 class=" text-warning"><b>Santa Magic</b></h1></div>
+          <div class="col-3 text-white text-center mt-2 mx-0">
+            <p class="mt-3 messages" id="message"></p>
+          </div>
+      </div>
+    </header>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card bg-success text-center mt-5">
+            <div class="card-header">Purchase Upgrades</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-5">
+                    <button onclick="buyGifts()" disabled="true" class="btn btn-danger" id="gift-button">Upgrade Gifts <i class="fas fa-gift"></i></button>
+                    <p class="mb-0">Gift Level: <span id="gifts-level"></span></p>
+                    <p class="mt-0">Gift Cost: <span id="gifts-price"></span></p>
+                    <button onclick="buyTrees()" disabled="true" class="btn btn-danger" id="tree-button">Upgrade Trees <i class="fas fa-tree"></i></button>
+                    <p class="mb-0">Tree Level: <span id="trees-level"></span></p>
+                    <p class="mt-0">Tree Cost: <span id="trees-price"></span></p>
+                  </div>
+                  <div class="col-7">
+                    <button onclick="buyOrnaments()" disabled="true" class="btn btn-danger" id="ornament-button">Upgrade Ornaments <i class="fas fa-golf-ball"></i></button>
+                    <p class="mb-0">Ornament Level: <span id="ornaments-level"></span></p>
+                    <p class="mt-0">Ornament Cost: <span id="ornaments-price"></span></p>
+                    <button onclick="buyElves()" disabled="true" class="btn btn-danger" id="elf-button">Upgrade Elves <i class="fas fa-grin-wink"></i></button>
+                    <p class="mb-0">Elf Level: <span id="elves-level"></span></p>
+                    <p class="mt-0">Elf Cost: <span id="elves-price"></span></p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mt-5 text-center"> 
+          <img onclick="santaSpecial()" src="https://s.clipartkey.com/mpngs/s/99-996592_clip-art-santa-claus-cut-out-santa-claus.png" alt="">
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card bg-danger text-center mt-5">
+            <div class="card-header">Current Resources</div>
+              <div class="card-body">
+                <h5>Cookies: <span id="cookie-count"></span></h5>
+                <p class="mt-3">Cookie Per Click: <span id="cookie-per-click"></span></p>
+                <p>Cookie Per Second: <span id="cookie-per-second"></span></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
